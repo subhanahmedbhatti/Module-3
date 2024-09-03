@@ -4,43 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Menu - Food, LLC</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
         <h1>Food, LLC</h1>
+        <!-- Mobile Menu Toggle Button -->
+        
         <nav>
             <!-- Desktop Menu -->
             <ul class="desktop-menu">
-                <li><a href="#chicken">Chicken</a></li>
-                <li><a href="#beef">Beef</a></li>
-                <li><a href="#sushi">Sushi</a></li>
+                <li><a href="#chicken" onclick="showSection('chicken')">Chicken</a></li>
+                <li><a href="#beef" onclick="showSection('beef')">Beef</a></li>
+                <li><a href="#sushi" onclick="showSection('sushi')">Sushi</a></li>
             </ul>
             <!-- Mobile Dropdown Menu -->
-            <select class="mobile-menu" onchange="window.location.href=this.value;">
-                <option value="#chicken">Chicken</option>
-                <option value="#beef">Beef</option>
-                <option value="#sushi">Sushi</option>
-            </select>
+            <div class="mobile-menu">
+                <select onchange="showSection(this.value)">
+                    <option value="chicken">Chicken</option>
+                    <option value="beef">Beef</option>
+                    <option value="sushi">Sushi</option>
+                </select>
+            </div>
         </nav>
     </header>
 
     <main>
         <section id="chicken" class="menu-item">
             <h2>Chicken</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p>(End of Chicken section) <a href="#">Back To Top</a></p>
         </section>
         
         <section id="beef" class="menu-item">
             <h2>Beef</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p>(End of Beef section) <a href="#">Back To Top</a></p>
         </section>
 
         <section id="sushi" class="menu-item">
             <h2>Sushi</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p>(End of Sushi section) <a href="#">Back To Top</a></p>
         </section>
     </main>
+
 </body>
 </html>
-
